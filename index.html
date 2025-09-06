@@ -1,0 +1,459 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unoffical Hermes Language Guide</title>
+  <style>
+    :root {
+      --background-dark: #121212;
+      --text-light: #e0e0e0;
+      --primary-accent: #9163CB;
+      --secondary-accent: #c1975d;
+      --border-color: #2c2c2c;
+      --code-background: #1a1a1a;
+    }
+
+    body {
+      background-color: var(--background-dark);
+      color: var(--text-light);
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      padding: 2rem;
+      line-height: 1.8;
+      font-size: 1.125rem;
+    }
+
+    .container {
+      max-width: 70ch;
+      margin: auto;
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+    }
+
+    h1,
+    h2 {
+      color: var(--primary-accent);
+      border-bottom: 1px solid var(--primary-accent);
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: -0.05rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .section-content {
+      padding: 1rem 0;
+    }
+
+    .dictionary-entry {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+    }
+
+    .dictionary-entry:last-child {
+      border-bottom: none;
+    }
+
+    .dictionary-word {
+      color: var(--secondary-accent);
+      font-weight: bold;
+    }
+
+    .notes {
+      font-size: 0.9em;
+      color: var(--text-light);
+      opacity: 0.8;
+    }
+
+    a {
+      color: var(--secondary-accent);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--primary-accent);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Hermes Language Guide</h1>
+    <p>The contemporary Hermes language, is a language from the world of "<b>Lord of </b><i>the</i> <b>Mysteries</b>".
+    </p>
+
+    <h2>Grammar & Structure</h2>
+    <div class="section-content">
+      <p>The modern Hermes language, derived from Ancient Hermes.</p>
+      <ul>
+        <li><strong>Punctuation & Case:</strong> There is no punctuation, and there is no distinction between capital
+          and lowercase letters.</li>
+        <li><strong>Word Separation:</strong> There are no spaces between words. Sentences are separated by a space or a
+          new line.</li>
+        <li><strong>Word Formation:</strong> Hermes words are based on the Chinese Pinyin system. For a sentence
+          segment, the Hermes word is formed by taking the first letter of each Chinese character's pronunciation, and
+          ending with the last letter of the final character's pronunciation.</li>
+      </ul>
+
+      <div class="container">
+        Example: Loen Kingdom<br>
+        Chinese Pinyin: Lu-En-Wang-Guo<br>
+        First letters: L, E, W, G<br>
+        Last letter of final pinyin ('Guo'): O<br>
+        Hermes: lewgo
+      </div>
+      <br>
+      <div class="container">
+        Example: The Fool's Honorific Name<br>
+        Chinese Pinyin: bu shuyu zhege shidai de yuzhe<br>
+        Hermes: bsyzgsddyze
+      </div>
+    </div>
+
+    <h2>Dictionary</h2>
+    <div class="section-content">
+      <p>A list of known words and their meanings in Hermes, sorted alphabetically.</p>
+      <div id="dictionary-list">
+        <div class="dictionary-entry">
+          <span class="dictionary-word">amantha</span>: serenity
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">arder</span>: the past/previous/old
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">ardeplos</span>: knowledge
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">blodisen</span>: upon me/relating to self, or Bless
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">cradem</span>: prophecy
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">crenne</span>: ignite/begin
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">comagon</span>: Protect (me)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">dapentir</span>: Farewell/goodbye
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">darik</span>: Must
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">deknosapo</span>: undisputable majesty
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">derun</span>: reveal
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">di</span>: the
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">dienplos</span>: departure
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">dirom</span>: journey
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">dirum</span>: long journey
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">distarion</span>: Uncertainty
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">ditrening</span>: difficult/draining
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">duok</span>: People
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">dubita</span>: temple/sacred plane
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">facera</span>: Holy bestowal/Saviours gift
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">fa</span>: Like
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">fargetam</span>: forget
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">fomas</span>: letters/text
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">fortunoneg</span>: fortune
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">freron</span>: close friend
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">furan</span>: from (origin)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">galeik</span>: star/cosmological entity
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">gumantatemuf</span>: Humanity will
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">gup</span>: High/situated above (all gods?)
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">gur</span>: High (seems like variation of gup)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">hellis</span>: Fool
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">hiturf</span>: bright light/holiness
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">inleukam</span>: Revelation
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">kapa</span>: light
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">kava</span>: buried in
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">kelfi</span>: above
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">knosapo</span>: disputable glory
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">kukung</span>: Gods?
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">laforcip</span>: Supremacy/great power
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">lagrowitan</span>: Conspiracry or deception
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">lauberan</span>: Prayer
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">latik</span>: divine/gods
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">leu</span>: Road
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">leuk</span>: road towards
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">lloca</span>: immortal
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">loga</span>: from (seperation)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">merplos</span>: Kindness and trust = benevolence
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">meta</span>: Multiple (lots)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">metho</span>: Response
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">muf</span>: Will
+          <br><span class="notes">(speculation - feels like an add on of a word)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">na</span>: me
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">navo</span>: posessing
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nefargetam</span>: Dont forget
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nefortunoneg</span>: pain and suffering = Misfortune
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nelloca</span>: in the gray fog? or Saving mortals
+          <br><span class="notes">(speculation, in doubt)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nescippan</span>: not hidden/omniscience
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nun</span>: everything
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">nureidan</span>: obstacles
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">offina</span>: come to
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">ornventien</span>: hearts of demons = the unholy
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">pagem</span>: unquestionable
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">plos</span>: undeniable
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">poperapo</span>: Remnants = prior to
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">pre</span>: Believers
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">presgard</span>: Praise
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">prophes</span>: truth
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">protasplos</span>: Eternal blessing/positive regards
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">riban</span>: Dearest companions/friends
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">rum</span>: short journey
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">run</span>: Hide
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">salvenen</span>: shaped with
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">scecana</span>: Phobos/Terror inducing
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">scippan</span>: hidden
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">sicaplos</span>: act of respiration/breath
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">solvas</span>: Sacrifice
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">starion</span>: certainty
+          <br><span class="notes">(speculation)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">sterinoda</span>: Leading
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">thusandik</span>: thousands
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">timan</span>: End
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">troom</span>: dreams
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">troomuti</span>: await
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">tronena</span>: new saint
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">troquen</span>: Torch
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">trunnunapo</span>: Illuminating
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">un</span>: a
+          <br><span class="notes">(certainty: high)</span>
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">ubinpro</span>: evil
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">uns</span>: You/your (related to un=a)
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">vera</span>: oracle
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">volord</span>: the world
+        </div>
+        <div class="dictionary-entry">
+          <span class="dictionary-word">wilan</span>: God
+        </div>
+      </div>
+    </div>
+    <br>
+    <span class="notes">All translations have been double-checked to the best of my ability. I only checked if they were
+      accurate <i>enough</i>. These translations may change in the future as new sources and research become
+      available. Please make a pull request/issue if you believe there is a mistake or message me on discord (teemsploit).</span>
+    <h2>Sources</h2>
+    <div class="section-content">
+      <ul>
+        <li><a href="https://www.reddit.com/r/LordofTheMysteries/comments/1n3pc42/lotm_general_writing_in_hermes/"
+            target="_blank">Writing and Grammar Rules (Reddit - vktst)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=UKR6qIQehFs" target="_blank">"Officially" Translated Words (YouTube
+            - mad3ub)</a></li>
+        <li><a href="https://lordofthemysteries.fandom.com/wiki/Languages#Hermes" target="_blank">General Info (Fandom
+            Wiki)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=R67yEtKPZPg" target="_blank">"Praise the Fool" in ancient Hermes
+            language (Unoffical translation) - Miracle Invoker</a></li>
+        <li><a href="https://www.youtube.com/watch?v=zJZE_nDb-mY" target="_blank">"Praise the Fool" in ancient Hermes
+            language - Offical lyric video</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
