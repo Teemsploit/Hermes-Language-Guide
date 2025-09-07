@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,7 @@
       --primary-accent: #9163CB;
       --secondary-accent: #c1975d;
       --border-color: #2c2c2c;
+      --notification-border-color: #9163CB;
       --code-background: #1a1a1a;
     }
 
@@ -30,6 +30,18 @@
       padding: 1rem;
       border-radius: 8px;
       background-color: #1a1a1a;
+      box-shadow: 2px 0px 8px #00000050;
+    }
+
+    .notificationcontainer {
+      max-width: 70ch;
+      text-align: center;
+      margin: auto;
+      border: 1px solid var(--notification-border-color);
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #9163CB50;
+      box-shadow: 2px 0px 8px #00000050;
     }
 
     h1,
@@ -38,6 +50,7 @@
       border-bottom: 1px solid var(--primary-accent);
       padding-bottom: 0.5rem;
       margin-top: 2rem;
+      text-shadow: 2px 2px 4px #00000050;
     }
 
     h1 {
@@ -97,7 +110,12 @@
 </head>
 
 <body>
-
+  <div class="notificationcontainer">
+    <h1>Request for hermes font.</h1>
+    <p><b>If anyone has the english to hermes font please message me on discord (teemsploit) as I can't seem to download
+        it from the fandom wiki.</b></p>
+  </div>
+  <br>
   <div class="container">
     <h1>Hermes Language Guide</h1>
     <p>The contemporary Hermes language, is a language from the world of "<b>Lord of </b><i>the</i> <b>Mysteries</b>".
