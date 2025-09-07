@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,6 +32,41 @@
       border-radius: 8px;
       background-color: #1a1a1a;
       box-shadow: 2px 0px 8px #00000050;
+    }
+
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--background-dark);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .top-nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 70ch;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+
+    .top-nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .top-nav a:hover {
+      background-color: var(--secondary-accent);
+      color: var(--background-dark);
     }
 
     .notificationcontainer {
@@ -106,10 +142,26 @@
     li {
       padding-bottom: 5px;
     }
+
+    body {
+      padding-top: 6rem;
+    }
+
+    .notificationcontainer {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 
 <body>
+  <div class="top-nav">
+    <div class="top-nav-container">
+      <a href="#grammar-section">Grammar</a>
+      <a href="#dictionary-section">Dictionary</a>
+      <a href="#examples-section">Examples</a>
+      <a href="#sources-section">Sources</a>
+    </div>
+  </div>
   <div class="notificationcontainer">
     <h1>Request for hermes font.</h1>
     <p><b>If anyone has the english to hermes font please message me on discord (teemsploit) as I can't seem to download
@@ -121,7 +173,7 @@
     <p>The contemporary Hermes language, is a language from the world of "<b>Lord of </b><i>the</i> <b>Mysteries</b>".
     </p>
 
-    <h2>Grammar & Structure</h2>
+    <h2 id="grammar-section">Grammar & Structure</h2>
     <div class="section-content">
       <p>The modern Hermes language is based on Ancient Hermes and has specific rules that shape its meaning:</p>
 
@@ -151,6 +203,7 @@
             <li><strong>Pausing after "di hellis":</strong>
               - Pausing after "di hellis," could mean a general statement about fools or a fool in relation to past a
               event and or events.
+            </li>
           </ul>
 
         </li>
@@ -189,7 +242,7 @@
         Hermes: bsyzgsddyze
       </div>
     </div>
-    <h2>Dictionary</h2>
+    <h2 id="dictionary-section">Dictionary</h2>
     <div class="section-content">
       <p>A list of known words and their meanings in Hermes, sorted alphabetically.</p>
       <div id="dictionary-list">
@@ -501,7 +554,7 @@
       accurate <i>enough</i>. These translations may change in the future as new sources and research become
       available. Please make a pull request/issue if you believe there is a mistake or message me on discord
       (teemsploit).</span>
-    <h2>Example Translations</h2>
+    <h2 id="examples-section">Example Translations</h2>
     <div class="section-content">
       <p>Here are some example translations into the Hermes language, along with explanations for the choices made and
         substitutions used:</p>
@@ -551,7 +604,7 @@
         </span>
       </div>
     </div>
-    <h2>Sources</h2>
+    <h2 id="sources-section">Sources</h2>
     <div class="section-content">
       <ul>
         <li><a href="https://www.reddit.com/r/LordofTheMysteries/comments/1n3pc42/lotm_general_writing_in_hermes/"
